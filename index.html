@@ -5,29 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>אודל רביבו - The Moment</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow-x: hidden; background-color: #ffffff; }
-        .bg {
-            background-image: url("bg.jpg");
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            background-color: #ffffff; 
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+        }
+        .bg-container {
             width: 100%;
-            max-width: 500px;
-            height: 100vh;
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: contain;
+            max-width: 500px; /* רוחב אידיאלי לנייד */
             position: relative;
-            margin: 0 auto;
+        }
+        .bg-image {
+            width: 100%;
+            height: auto;
+            display: block;
         }
         .link-box {
             position: absolute;
-            left: 10%; width: 80%;
-            height: 5%;
+            left: 10%; 
+            width: 80%;
+            height: 4%; /* גובה הכפתור */
             cursor: pointer;
-            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="bg">
-        <a href="https://odelrevivo.netlify.app/#" class="link-box" style="top: 29.3%;"></a> <a href="https://odelrevivo.netlify.app/#portfolio" class="link-box" style="top: 33.8%;"></a> <a href="https://www.instagram.com/odel_revivo_?igsh=MWV0OHNtMmsxbXFqbQ%3D%3D&utm_source=qr" class="link-box" style="top: 38.3%;"></a> <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לשמוע%20פרטים%20על%20חבילת%20סושיאל%20לכלות" class="link-box" style="top: 42.8%;"></a> </div>
+    <div class="bg-container">
+        <img src="bg.png" class="bg-image" alt="כרטיס ביקור אודל רביבו">
+        
+        <a href="https://odelrevivo.netlify.app/#" class="link-box" style="top: 29.5%;"></a>
+        <a href="https://odelrevivo.netlify.app/#portfolio" class="link-box" style="top: 34%;"></a>
+        <a href="https://www.instagram.com/odel_revivo_/" class="link-box" style="top: 38.5%;"></a>
+        <a href="https://wa.me/972559257686" class="link-box" style="top: 43%;"></a>
+    </div>
 </body>
 </html>
