@@ -5,38 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>אודל רביבו - The Moment</title>
     <style>
-        body, html { margin: 0; padding: 0; background-color: #ffffff; width: 100%; display: flex; justify-content: center; }
-        .bg-container { 
-            width: 100%; 
-            max-width: 500px; 
-            position: relative; 
-            display: inline-block;
-        }
-        .bg-image { width: 100%; height: auto; display: block; }
+        body { margin: 0; padding: 0; background-color: #ffffff; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; }
+        .card-container { width: 100%; max-width: 500px; display: flex; flex-direction: column; align-items: center; }
+        .header-img { width: 100%; height: auto; display: block; }
         
-        .link-box { 
-            position: absolute; 
-            left: 50%;
-            transform: translateX(-50%);
-            width: 88%; 
-            cursor: pointer; 
-            text-decoration: none;
-            /* השארתי מסגרת דקה לבדיקה סופית - למחוק כשזה מושלם */
-            border: 1px solid red; 
+        /* עיצוב כפתורים אמיתיים במקום ניחושי מיקום */
+        .buttons-container { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 20px 0; background-color: #fff; }
+        .btn { 
+            width: 85%; 
+            padding: 15px 0; 
+            background-color: #D7A3AE; /* הצבע הוורוד שלך */
+            color: white; 
+            text-align: center; 
+            text-decoration: none; 
+            border-radius: 25px; 
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+        .offer-section { width: 100%; margin-top: 20px; text-align: center; }
     </style>
 </head>
 <body>
-    <div class="bg-container">
-        <img src="bg.png" class="bg-image" alt="כרטיס ביקור אודל רביבו">
-        
-        <a href="https://odelrevivo.netlify.app/#" class="link-box" style="top: 7.5%; height: 1%;"></a> 
-        <a href="https://odelrevivo.netlify.app/#portfolio" class="link-box" style="top: 8.6%; height: 1%;"></a> 
-        <a href="https://www.instagram.com/odel_revivo_/" class="link-box" style="top: 9.7%; height: 1%;"></a> 
-        <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לשמוע%20פרטים" class="link-box" style="top: 10.9%; height: 1%;"></a>
+    <div class="card-container">
+        <img src="bg.png" class="header-img" alt="אודל רביבו">
 
-        <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לממש%20את%20ההטבה%20של%20ה-10%20אחוז%20הנחה" class="link-box" style="top: 19.1%; height: 1.8%;"></a>
-        <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לממש%20את%20ההטבה%20של%20ריל%20נוסף%20במתנה" class="link-box" style="top: 22%; height: 1.8%;"></a>
+        <div class="buttons-container">
+            <a href="https://odelrevivo.netlify.app/#" class="btn">האתר שלי</a> 
+            <a href="https://odelrevivo.netlify.app/#portfolio" class="btn">תיק עבודות</a> 
+            <a href="https://www.instagram.com/odel_revivo_/" class="btn">אינסטגרם</a> 
+            <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לשמוע%20פרטים" class="btn">יצירת קשר</a> 
+        </div>
+
+        <div class="buttons-container">
+            <p style="color: #666; font-size: 14px;">--- הטבות מיוחדות ---</p>
+            <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לממש%20את%20ההטבה%20של%20ה-10%20אחוז%20הנחה" class="btn">10% הנחה על חבילת סושיאל</a> 
+            <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לממש%20את%20ההטבה%20של%20ריל%20נוסף%20במתנה" class="btn">ריל נוסף במתנה!</a> 
+        </div>
     </div>
 </body>
 </html>
