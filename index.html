@@ -6,17 +6,23 @@
     <title>אודל רביבו - The Moment</title>
     <style>
         body, html { margin: 0; padding: 0; background-color: #ffffff; width: 100%; display: flex; justify-content: center; }
-        .bg-container { width: 100%; max-width: 500px; position: relative; }
+        .bg-container { 
+            width: 100%; 
+            max-width: 500px; 
+            position: relative; 
+            display: inline-block;
+        }
         .bg-image { width: 100%; height: auto; display: block; }
         
         .link-box { 
             position: absolute; 
-            left: 10%; 
-            width: 80%; 
+            left: 50%;
+            transform: translateX(-50%);
+            width: 88%; 
             cursor: pointer; 
             text-decoration: none;
-            /* מסגרת עזר לבדיקה - למחוק את השורה למטה כשהכל יושב במקום */
-            border: 2px solid red; 
+            /* השארתי מסגרת דקה רק לביטחון, תמחקי אותה בשנייה שזה יושב בול */
+            border: 1px solid red; 
         }
     </style>
 </head>
@@ -24,11 +30,13 @@
     <div class="bg-container">
         <img src="bg.png" class="bg-image" alt="כרטיס ביקור אודל רביבו">
         
-        <a href="https://odelrevivo.netlify.app/#" class="link-box" style="top: 45.3%; height: 3.5%;"></a> <a href="https://odelrevivo.netlify.app/#portfolio" class="link-box" style="top: 49.8%; height: 3.5%;"></a> <a href="https://www.instagram.com/odel_revivo_/" class="link-box" style="top: 54.3%; height: 3.5%;"></a> <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לשמוע%20פרטים" class="link-box" style="top: 58.8%; height: 3.5%;"></a>
+        <a href="https://odelrevivo.netlify.app/#" class="link-box" style="top: 18.2%; height: 2.3%;"></a> 
+        <a href="https://odelrevivo.netlify.app/#portfolio" class="link-box" style="top: 21%; height: 2.3%;"></a> 
+        <a href="https://www.instagram.com/odel_revivo_/" class="link-box" style="top: 23.8%; height: 2.3%;"></a> 
+        <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לשמוע%20פרטים" class="link-box" style="top: 26.6%; height: 2.3%;"></a>
 
-        <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לממש%20את%20ההטבה%20של%20ה-10%20אחוז%20הנחה" class="link-box" style="top: 114%; height: 6%;"></a>
-        
-        <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לממש%20את%20ההטבה%20של%20ריל%20נוסף%20במתנה" class="link-box" style="top: 125%; height: 6%;"></a>
+        <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לממש%20את%20ההטבה%20של%20ה-10%20אחוז%20הנחה" class="link-box" style="top: 46.5%; height: 4%;"></a>
+        <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לממש%20את%20ההטבה%20של%20ריל%20נוסף%20במתנה" class="link-box" style="top: 53.5%; height: 4%;"></a>
     </div>
 </body>
 </html>
