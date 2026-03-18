@@ -1,32 +1,113 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>אודל רביבו - The Moment</title>
-    <style>
-        body, html { margin: 0; padding: 0; background-color: #ffffff; width: 100%; display: flex; justify-content: center; }
-        .bg-container { width: 100%; max-width: 500px; position: relative; }
-        .bg-image { width: 100%; height: auto; display: block; }
-        
-        .link-box { 
-            position: absolute; 
-            left: 50%;
-            transform: translateX(-50%);
-            width: 85%; 
-            cursor: pointer; 
-            text-decoration: none;
-            /* מסגרת עזר לבדיקה - למחוק את השורה מתחת כשהכל יושב במקום */
-            border: 1px solid red; 
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odel Revivo</title>
+
+<style>
+
+body{
+margin:0;
+background:#f3f3f3;
+}
+
+.wrapper{
+position:relative;
+max-width:491px;
+margin:auto;
+}
+
+.wrapper img{
+width:100%;
+display:block;
+}
+
+.hotspot{
+position:absolute;
+display:block;
+}
+
+/* האתר שלי */
+.about{
+left:3%;
+top:25.8%;
+width:89%;
+height:3.4%;
+}
+
+/* תיק עבודות */
+.portfolio{
+left:3%;
+top:29.8%;
+width:89%;
+height:3.4%;
+}
+
+/* אינסטגרם */
+.instagram{
+left:3%;
+top:33.8%;
+width:89%;
+height:3.4%;
+}
+
+/* יצירת קשר */
+.contact{
+left:3%;
+top:37.8%;
+width:89%;
+height:3.4%;
+}
+
+/* חץ גלילה */
+.arrow{
+left:46%;
+top:42%;
+width:8%;
+height:2%;
+}
+
+/* 10 אחוז הנחה */
+.discount{
+left:15%;
+top:76%;
+width:70%;
+height:3.5%;
+}
+
+/* ריל נוסף */
+.reel{
+left:15%;
+top:83%;
+width:70%;
+height:3.5%;
+}
+
+</style>
 </head>
+
 <body>
-    <div class="bg-container">
-        <img src="bg.png" class="bg-image" alt="כרטיס ביקור אודל רביבו">
-        
-        <a href="https://odelrevivo.netlify.app/#" class="link-box" style="top: 25.8%; height: 3.2%;"></a> <a href="https://odelrevivo.netlify.app/#portfolio" class="link-box" style="top: 30.2%; height: 3.2%;"></a> <a href="https://www.instagram.com/odel_revivo_/" class="link-box" style="top: 34.6%; height: 3.2%;"></a> <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לשמוע%20פרטים" class="link-box" style="top: 39%; height: 3.2%;"></a> <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לממש%20את%20ההטבה%20של%20ה-10%20אחוז%20הנחה" class="link-box" style="top: 73.8%; height: 4.5%;"></a>
-        <a href="https://wa.me/972559257686?text=היי%20אודל,%20אשמח%20לממש%20את%20ההטבה%20של%20ריל%20נוסף%20במתנה" class="link-box" style="top: 80.8%; height: 4.5%;"></a>
-    </div>
+
+<div class="wrapper">
+
+<img src="bg.png" alt="card">
+
+<a class="hotspot about" href="https://odelrevivo.netlify.app/"></a>
+
+<a class="hotspot portfolio" href="https://odelrevivo.netlify.app/#portfolio"></a>
+
+<a class="hotspot instagram" href="https://www.instagram.com/odel_revivo_" target="_blank"></a>
+
+<a class="hotspot contact" href="https://wa.me/972559257686" target="_blank"></a>
+
+<a class="hotspot arrow" href="#offer"></a>
+
+<a class="hotspot discount" href="https://wa.me/972559257686" id="offer"></a>
+
+<a class="hotspot reel" href="https://www.instagram.com/odel_revivo_" target="_blank"></a>
+
+</div>
+
 </body>
 </html>
